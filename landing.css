@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background: #FF9F1C;
+    position: fixed;
+    align-items: center;
+}
+
+.header-texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("images/joke_dog.png") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    height: 50px;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+}
+
+.header-navbar {
+    width: 100%;
+    height: 50px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+}
+
+.header-navbar-menu-link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+ul.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.2;
+}
+
+ul.user_actions {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.2;
+}
+
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #FFBF69;
+    flex: 0.2;
+    display: flex;
+}
+
+.store {
+    flex: 1;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+}
+
+.login{
+    flex-direction: column;
+    align-items: center;
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product_display{
+    margin: 2% 2%;
+}
+.product {
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 5px #2ec4b6;
+    background-color: #cbf3f0;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+a {
+    display: block;
+    background-position: center;
+    background-size: cover;
+
+}
+
+a.signin {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/member.png");
+}
+
+a.cart {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/shopping_cart.png");
+}
+
+a.logout {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/logout.png");
+}
+
+a.footer {
+    display: inline;
+}
+
+footer {
+    display: inline;
+    width: 100%;
+    flex: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
+
