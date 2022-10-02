@@ -99,7 +99,10 @@
 			echo "User created";
 	}
 	if ($_POST['submit'] === "OK" && (!$_POST['login'] || !$_POST['passwd']))
+    {
 		thanks_bye("error");
+        header('Refresh: 1; URL="error.php"');
+    }
 ?>
         </div>
 
